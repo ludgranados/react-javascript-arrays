@@ -9,17 +9,18 @@ import './App.css';
 
 function App() {
 
-
 // new array with a given value
 
+const someArrayFunc = (arraySize, valueToPass) => {
+  let filledArray = [];
+  for (let i = 0; i< arraySize; i++) {
+    filledArray.push(valueToPass);
+  }
+  return filledArray;
+}
 
-// const someArrayFunc = () => {
-//   return (
-   
-//   )
-// }; 
+console.log(someArrayFunc(3, 'apples'))
 
-// console.log(someArrayFunc);
 
 // reversing the order of the items in the array 
   const originalArray = [1, 2, 3];
